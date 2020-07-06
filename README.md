@@ -1,4 +1,19 @@
-### Hi there 👋
+### Hello, I'm Jon!👋
+### [Portfolio](https://jojonicho.wtf) :art:
+### [Resume](https://cv.jojonicho.wtf) :pencil:
+
+<p align="center">
+  <img src="https://pbs.twimg.com/media/EbSHKDUU4AEEQvp?format=jpg&name=medium" width="200px">
+  <br>
+  <samp>
+    Software Engineer Intern at Mekari - Sophomore at University of Indonesia<br>
+    :sparkles: Favorite Tech: React, Typescript, GraphQL, Postgres ... <br>
+    🌱 I’m currently learning CS <br>
+    📫 How to reach me: jojonicho@gmail.com <br>
+    ⚡ Big Fan Of: Aimer, Mrs. GREEN APPLE Kenshi Yonezu <br>
+    Image Credit: https://twitter.com/ngntrtr
+  </samp>
+</p>
 
 <!--
 **jojonicho/jojonicho** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
