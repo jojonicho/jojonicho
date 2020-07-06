@@ -1,4 +1,4 @@
-### Hello, I'm Jon!👋
+### Hello, I'm Jon! 👋
 ### [Portfolio](https://jojonicho.wtf) :art:
 ### [Resume](https://cv.jojonicho.wtf) :pencil:
 
