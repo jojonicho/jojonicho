@@ -8,7 +8,7 @@
     :sparkles: Favorite Tech: React, Typescript, GraphQL, Postgres ... <br>
     🌱 I’m currently learning CS <br>
     📫 How to reach me: jojonicho181@gmail.com <br>
-    ⚡ Big Fan Of: Aimer, Mrs. GREEN APPLE Kenshi Yonezu <br>
+    ⚡ Big Fan Of: Aimer, Mrs. GREEN APPLE, Kenshi Yonezu <br>
     :art: Portfolio: https://jojonicho.wtf <br>
     :pencil: Resume: https://cv.jojonicho.wtf <br>
     Image Credit: https://twitter.com/ngntrtr
