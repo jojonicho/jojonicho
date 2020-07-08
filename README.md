@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://pbs.twimg.com/media/EbSHKDUU4AEEQvp?format=jpg&name=medium" width="200px">
+  <img src="https://i.imgur.com/IyjFcq1.png" width="200px">
   <br>
   <samp>
     Hello, I'm Jon! 👋
@@ -11,7 +11,7 @@
     ⚡ Big Fan Of: Aimer, Mrs. GREEN APPLE, Kenshi Yonezu <br>
     :art: Portfolio: https://jojonicho.wtf <br>
     :pencil: Resume: https://cv.jojonicho.wtf <br>
-    Image Credit: https://twitter.com/ngntrtr
+    Image Artist: https://ansqee.netlify.app <br>
   </samp>
 </p>
 
