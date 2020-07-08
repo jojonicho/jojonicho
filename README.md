@@ -4,14 +4,14 @@
   <samp>
     Hello, I'm Jon! 👋
     Software Engineer Intern at Mekari<br>
-    Sophomore at University of Indonesia<br>
+    :school: Sophomore at University of Indonesia<br>
     :sparkles: Favorite Tech: React, Typescript, GraphQL, Postgres ... <br>
-    🌱 I’m currently learning CS <br>
-    📫 How to reach me: jojonicho181@gmail.com <br>
-    ⚡ Big Fan Of: Aimer, Mrs. GREEN APPLE, Kenshi Yonezu <br>
+    :notebook: I’m currently learning CS <br>
+    :email:	jojonicho181@gmail.com <br>
     :art: Portfolio: https://jojonicho.wtf <br>
     :pencil: Resume: https://cv.jojonicho.wtf <br>
     Image Artist: https://ansqee.netlify.app <br>
+    :notes: Aimer, Mrs. GREEN APPLE, Kenshi Yonezu <br>
   </samp>
 </p>
 
