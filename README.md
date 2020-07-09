@@ -10,6 +10,7 @@
     :email:	jojonicho181@gmail.com <br>
     :art: Portfolio: https://jojonicho.wtf <br>
     :pencil: Resume: https://cv.jojonicho.wtf <br>
+    :briefcase: LinkedIn: https://linkedin.com/in/joni/
     Image Artist: https://ansqee.netlify.app <br>
     :notes: Aimer, Mrs. GREEN APPLE, Kenshi Yonezu <br>
   </samp>
