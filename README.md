@@ -2,8 +2,8 @@
   <img src="https://i.imgur.com/IyjFcq1.png" width="200px">
   <br>
   <samp>
-    Hello, I'm Jon! 👋
-    Software Engineer Intern at Mekari<br>
+    Hello, I'm Jon! 👋<br>
+    Software Engineer Intern at <strike>Mekari</strike> OY! Indonesia<br>
     :school: Sophomore at University of Indonesia<br>
     :sparkles: Favorite Tech: React, Typescript, GraphQL, Postgres ... <br>
     :notebook: I’m currently learning CS <br>
