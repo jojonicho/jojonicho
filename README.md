@@ -3,7 +3,7 @@
   <br>
   <samp>
     Hello, I'm Jon! 👋<br>
-    Software Engineer Intern at <strike>Mekari</strike> OY! Indonesia<br>
+    Part Time Software Engineer at OY! Indonesia<br>
     :school: Sophomore at University of Indonesia<br>
     :sparkles: Favorite Tech: React, Typescript, Django, Node, GraphQL, Postgres<br>
     :notebook: I’m currently learning CS <br>
