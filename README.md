@@ -3,7 +3,7 @@
   <br>
   <samp>
     Hello, I'm Jon! 👋<br>
-    Part Time Software Engineer at OY! Indonesia<br>
+    I'm currently a Software Engineer Intern at Dekoruma<br>
     :school: Sophomore at University of Indonesia<br>
     :sparkles: Favorite Tech: React, Typescript, Django, Node, GraphQL, Postgres<br>
     :notebook: I’m currently learning CS <br>
