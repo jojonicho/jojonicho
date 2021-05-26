@@ -8,8 +8,8 @@
     :sparkles: Favorite Tech: React, Typescript, Django, Node, GraphQL, Postgres<br>
     :notebook: I’m currently learning CS <br>
     :email:	jojonicho181@gmail.com <br>
-    :art: Portfolio: https://jojonicho.wtf <br>
-    :pencil: Resume: https://s.id/jojonicho-resume <br>
+    :art: Portfolio: https://jojonicho.gtsb.io <br>
+    :pencil: Resume: https://s.id/joni-resume <br>
     :briefcase: LinkedIn: https://linkedin.com/in/joni <br>
     Image Artist: https://ansqee.netlify.app <br>
     :notes: Aimer, Mrs. GREEN APPLE, Kenshi Yonezu <br>
