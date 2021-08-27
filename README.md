@@ -13,5 +13,5 @@
     Image Artist: https://ansqee.netlify.app <br>
   </samp>
   <br>
-  <img src="https://github-readme-stats.vercel.app/api?username=jojonicho">
+  <img height="137px" src="https://github-readme-stats.vercel.app/api?username=jojonicho&hide_title=true&hide_border=false&show_icons=true&include_all_commits=true&count_private=true&line_height=20&text_color=000&icon_color=000&bg_color=fffa6b,f8ff00,00d2ff,3a47d5&theme=graywhite"/>
 </p>
