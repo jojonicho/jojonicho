@@ -1,1 +1,1 @@
-![](https://github.com/jojonicho/jojonicho/blob/main/resume.png)
+![](https://github.com/jojonicho/jojonicho/blob/master/resume.png)
