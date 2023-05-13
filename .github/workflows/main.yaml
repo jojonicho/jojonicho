@@ -45,7 +45,6 @@ jobs:
           DQT='"' 
           SRC="rights=${DQT}none${DQT} pattern=${DQT}PDF${DQT}"
           RPL="rights=${DQT}read\|write${DQT} pattern=${DQT}PDF${DQT}"
-          
           HGT="name=${DQT}height${DQT} value=${DQT}10KP${DQT}"
           HGTR="name=${DQT}height${DQT} value=${DQT}128Kp${DQT}"
           
@@ -66,14 +65,17 @@ jobs:
           
       - name: Convert PDF to PNG
         run: convert -density 900 -background white -alpha off main.pdf -resize 25% -quality 90 -colorspace RGB resume.png
-      - name: Commit PNG
-        id: commit
-        run: |
-          git config --local user.email "action[bot]@github.com"
-          git config --local user.name "github-actions[bot]"
-          git add resume.png
-          git commit -m "[bot] updated resume.png"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - uses: EndBug/add-and-commit@v9
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          default_author: github_actions
+      #- name: Commit PNG
+        #id: commit
+        #run: |
+          #git config --local user.email "action[bot]@github.com"
+          #git config --local user.name "github-actions[bot]"
+          #git add resume.png
+          #git commit -m "[bot] updated resume.png"
+      #- name: Push changes
+        #uses: ad-m/github-push-action@master
+        #with:
+          #github_token: ${{ secrets.GITHUB_TOKEN }}
