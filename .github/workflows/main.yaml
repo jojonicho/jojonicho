@@ -10,6 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
+      - name: Rename pdf file
+        run: mv main.pdf JonathanNicholas_Resume.pdf
       - name: Uploading artifact
         uses: actions/upload-artifact@v2
         with:
