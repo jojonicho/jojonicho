@@ -1,0 +1,349 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+% set bullet margins
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt} }
+  }
+}
+
+\newcommand{\educationSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+%without location
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+
+    \begin{tabularx}{\textwidth}{X c >{\raggedleft}X}
+
+        \textbf{#1} & \textit{\textbf{#3}} & #2
+    \end{tabularx}\vspace{-7pt}
+}
+
+% with location
+% \newcommand{\resumeSubheading}[4]{
+%   \vspace{-2pt}\item
+
+%     \begin{tabularx}{\textwidth}{X c >{\raggedleft}X}
+
+%         \textbf{#1} & \textit{\textbf{#3} \small #4} & #2
+%     \end{tabularx}\vspace{-7pt}
+% }
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\projectItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\projectItemListEnd}{\end{itemize}\vspace{-10pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+% \Huge \scshape Open To Full-Time Backend Engineering \\ \vspace{1pt}
+    \textbf{\Huge \scshape Jonathan Nicholas} \\ \vspace{1pt}
+    \small +62 81291000903 $|$ \href{mailto:gmail.com}{\underline{jojonichoo@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/joni}{\underline{linkedin.com/in/joni}} $|$
+    \href{https://github.com/jojonicho}{\underline{github.com/jojonicho}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSubheading
+      {University of Indonesia}{Depok, Indonesia}
+      {Bachelor of Science in Computer Science, GPA: 3.87/4.0}{2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Researcher} {Jan 2023 -- May 2023}
+      {\href{https://www.ui.ac.id/}{University of Indonesia}}{Jakarta, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Wrote thesis titled Load Balancing Analysis on App Performance in Geo-Distributed Kubernetes Clusters.}
+        \resumeItem{Developed and deployed application to geo-distributed Kubernetes clusters using multi-cluster resources on GCP.}
+        \resumeItem{Configured Istio service mesh for location-aware load balancing and measured performance using Vegeta load test tool.}
+      \resumeItemListEnd
+    % \resumeSubheading
+      % {Backend Engineer} {Jan 2023 - Present}
+      % {\href{https://ishangry.com/}{Hangry.com}}{Jakarta, Indonesia}
+      % \resumeItemListStart
+      %   \resumeItem{Developed redeemable points system using NodeJS, Redis, Kafka, and Typescript.}
+      % \resumeItemListEnd
+      
+    \resumeSubheading
+      {Backend Engineer Intern} {Aug 2022 -- Dec 2022}
+      {\href{https://www.traveloka.com/}{Traveloka.com}}{Jakarta, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Integrated Salesforce and Datadog Monitoring \& Alert using Terraform, AWS Lambda, and Java.}
+        % \resumeItem{Reduced significant cost by refactoring survey data ingestion cron job using Python and AWS Lambda.}
+        \resumeItem{Increased user engagement by creating routing logic for Traveloka Priority users using Java and Terraform.}
+        \resumeItem{Automated GitHub release tag using Github Actions.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Backend Engineer Intern} {Feb 2022 -- Apr 2022}
+      {\href{https://www.ruangguru.com/}{Ruangguru.com}}{Jakarta, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Prevented millions in losses by integrating rate limiting on hundreds of services using Go, Kubernetes, Istio, and Envoy.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern} {Jun 2021 -- Jan 2022}
+      {\href{https://dekoruma.com}{Dekoruma.com}}{Jakarta, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Increased Paid GMV by 100M by adding Shipping Calculation Info using Django REST Framework and React Native.}
+        \resumeItem{Improved revenue, traffic, and SEO by developing {\href{https://dekoruma.com/artikel}{dekoruma.com/artikel}} using NextJS, React Query, and Algolia.}
+      \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+    % \resumeSubSubheading
+    % {Software Engineer Intern} {Dec 2021 -- Jan 2022}
+    % \resumeItemListStart
+    %     \resumeItem{Apache Beam}
+    %      {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    % \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Software Engineer} {Sep 2020 -- Nov 2021}
+    %   {\href{https://compfest.id}{Compfest.id}}{Depok, Indonesia}
+    %   \resumeItemListStart
+    %     \resumeItem{Led a team of 12 developers with agendas such as design documents, system designs, task distribution,  and code review.}
+    %     \resumeItem{Designed and developed systems for recruitment and e-commerce app using NextJS, NodeJS, Hasura, and TailwindCSS}
+    %   \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer Intern} {Sep 2020 -- Mar 2021}
+      {\href{https://oyindonesia.com}{OY Indonesia}}{Jakarta, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Increased revenue by 30\% by developing end-to-end Promo Code feature using Flutter with BloC state management.}
+        \resumeItem{Applied Data Access Object(DAO) and Model Controller Service(MCS) Design Patterns in Java Backend architecture.}
+        % \resumeItem{Created unit tests and mock tests on top of validation middlewares with RabbitMQ schedulers for Paycoreservice API.}
+        % \resumeItem{Implemented multi-step form and data table Frontend using React, Typescript, and OY’s Fortune UI.}
+        \resumeItem{Utilized RabbitMQ for publishing and consuming events to validate user eligibility on promo codes and rewards.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Engineer Intern} {Jul 2020 -- Sep 2020}
+      {\href{https://mekari.com/}{Mekari.com}}{Jakarta, Indonesia}
+      \resumeItemListStart
+        \resumeItem{Developed and automated Backend using Python, Selenium, and AWS (Amplify, Lambda, Secrets Manager, S3, SES).}
+        \resumeItem{Utilized Docker, AWS-CLI, and serverless CLI to create and deploy AWS Lambda dependency layers.}
+        % \resumeItem{Implemented access management Frontend using React and Typescript, including a custom UI kit.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{\href{https://medium.com/@jojonicho/understanding-crypto-from-wallets-to-contracts-to-trading-2b2cdc82e17b}{Ajaib.co.id Decentralized Crypto}}
+          $|$ \emph{Blockchain, Ethers, Smart Contracts, React Native}}{}
+          \projectItemListStart
+            \resumeItem{Developed features such as importing multiple wallet addresses, token swap, and transactions (transfer/receive tokens).}
+            \resumeItem{Automated \href{https://ristek.link/ajaib-crypto-apk}{Downloadable Android APK} generation using Gitlab CI/CD and Expo.}
+          \projectItemListEnd
+        
+    %   {\href{https://compfest.id}{Compfest.id}}{Depok, Indonesia}
+    %   \resumeItemListStart
+    %     \resumeItem{Led a team of 12 developers with agendas such as design documents, system designs, task distribution,  and code review.}
+    %     \resumeItem{Designed and developed systems for recruitment and e-commerce app using NextJS, NodeJS, Hasura, and TailwindCSS}
+        \resumeProjectHeading
+          {\textbf{\href{https://compfest.id}{Compfest.id}}
+          $|$ \emph{NextJS, NodeJS, Hasura, GraphQL, Tailwind}}{}
+          \projectItemListStart
+            \resumeItem{Led a team of 12 developers with agendas such as design documents, system designs, task distribution,  and code review.}
+            \resumeItem{Designed and developed systems for recruitment and e-commerce app.}
+          \projectItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{\href{https://jojonicho.gtsb.io}{Portfolio and Blog}}
+          $|$ \emph{React, Gatsby, Tailwind, Framer Motion}}{}
+          \projectItemListStart
+            \resumeItem{Impacted over 2000 connections through a \href{https://www.linkedin.com/posts/joni_the-gatsby-project-structure-activity-6667343046142783488-mKfn}{LinkedIn article} documenting the process of making this project.}
+          \projectItemListEnd
+    %   \resumeProjectHeading
+    %       {\textbf{\href{https://bemapps.cs.ui.ac.id/requirements-gatherer}{Requirements Gatherer}}
+    %       $|$ \emph{React, Chakra-UI, Django REST Framework}}{Sep 2020 -- Feb 2021}
+    %       \projectItemListStart
+    %         \resumeItem{Eased communication between Product Owners and Developers using Google Authentication and messaging feature.}
+    %       \projectItemListEnd
+    %   \resumeProjectHeading
+    %       {\textbf{\href{https://github.com/jojonicho/distro}{Discord Clone}}
+    %       $|$ \emph{NextJS, Typescript, Apollo GraphQL, TypeORM, NodeJS}}{May 2020 -- Aug 2020}
+    %       \projectItemListStart
+    %         \resumeItem{Implemented Authentication using JWT, access and refresh tokens and real-time Chat and Channels.}
+    %       \projectItemListEnd
+    %   \resumeProjectHeading
+    %       {\textbf{Room Borrowings Bot}
+    %       $|$ \emph{Django REST API}}{May 2020 -- Sep 2020}
+    %       \projectItemListStart
+    %         \resumeItem{Developed LINE bot for room borrowings by notifying admins upon booking updates.}
+    %       \projectItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://bemapps.cs.ui.ac.id/dorakula}{Blood Donation App}}
+          $|$ \emph{React, Chakra-UI, Django REST Framework}}{}
+          \projectItemListStart
+            \resumeItem{Connected the Indonesian Red Cross with blood donors across Indonesia.}
+          \projectItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Finalist, The 2022 ICPC Asia Jakarta Regional Contest}
+          $|$ \emph{Ranked 18th nationally}}{2022}
+    \resumeProjectHeading
+          {\textbf{Fourth Winner, Competitive Programming GEMASTIK}
+          $|$ \emph{Ranked 4th nationally}}{2022}
+      % \resumeProjectHeading
+      %     {\textbf{Finalist, COMPFEST 2022}
+      %     \emph{}}{2022}
+      \resumeProjectHeading
+          {\textbf{Round 2, Facebook/Meta Hacker Cup 2022}
+          $|$ \emph{Ranked 869th out of 12.330 participants in Round 1}}{2022}
+    \resumeProjectHeading
+          {\textbf{Top 650 Internationally, Google Kickstart 2022 Round E}
+          $|$ \emph{Ranked 11th nationally}}{2022}
+    \resumeProjectHeading
+          {\textbf{Finalist, The 2021 ICPC Asia Jakarta Regional Contest}
+          $|$ \emph{Ranked top 40 internationally}}{2021}
+      % \resumeProjectHeading
+      %     {\textbf{Finalist, IEEEXTreme 15}
+      %     $|$ \emph{1 of 3 teams representing University of Indonesia.}}{2021}
+      \resumeProjectHeading
+          {\textbf{Silver Medalist, Data Mining GEMASTIK}
+          $|$ \emph{Presented on classification using CatBoost}}{2020}
+      \resumeProjectHeading
+          {\textbf{Third Winner, Data Mining JOINTS UGM}
+          $|$ \emph{Ranked 1st out of 10 in \href{https://www.kaggle.com/c/final-dm-2020/leaderboard}{finals} (kaggle)}}{2020}
+      \resumeProjectHeading
+          {\textbf{Third Winner, Data Science Arkavidia ITB}
+          $|$ \emph{Ranked 1st out of 360 in \href{https://www.kaggle.com/c/datavidia2019v2/leaderboard}{preliminaries} and 3rd in \href{https://www.kaggle.com/c/finaldatavidia2019/leaderboard}{finals} (kaggle)}}{2020}
+    %   \resumeProjectHeading
+    %       {\textbf{Sea Undergraduate Scholarship}
+    %       $|$ \emph{Selected as 1 of 4 freshmen (UI) and out of 37 finalists (UI).}}{2019}
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Go, Java, C++, Javascript, Typescript, Dart} \\
+     \textbf{Back End}{: Django REST Framework, NodeJS, Hasura, Spring Boot, Apollo-Server} \\
+     \textbf{Front End}{: React, NextJS, Gatsby, React Native, Flutter, Redux, Apollo-Client, React-Query, Tailwind} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Istio , AWS, GCP, Redis, PostgreSQL, RabbitMQ} \\
+     \textbf{Coursework}{: Data Structures and Algorithms, Software Development, Database, Design Patterns, Operating Systems}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
