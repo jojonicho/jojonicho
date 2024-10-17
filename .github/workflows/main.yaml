@@ -27,7 +27,7 @@ jobs:
       - name: Rename pdf file
         run: mv main.pdf JonathanNicholas_Resume.pdf
       - name: Uploading artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: PDF
           path: JonathanNicholas_Resume.pdf
@@ -36,7 +36,7 @@ jobs:
         uses: nanzm/get-time-action@v1.1
         with:
           timeZone: -7
-          format: 'YYYY-MM-DD-HH-mm-ss'
+          format: "YYYY-MM-DD-HH-mm-ss"
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -51,9 +51,9 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./JonathanNicholas_Resume.pdf
-          asset_name:  JonathanNicholas_Resume.pdf
+          asset_name: JonathanNicholas_Resume.pdf
           asset_content_type: application/pdf
-          
+
       - name: Install ghostscript
         run: sudo apt-get update --fix-missing && sudo apt install ghostscript
       - name: Change ImageMagick security policy
@@ -63,25 +63,25 @@ jobs:
           RPL="rights=${DQT}read\|write${DQT} pattern=${DQT}PDF${DQT}"
           HGT="name=${DQT}height${DQT} value=${DQT}10KP${DQT}"
           HGTR="name=${DQT}height${DQT} value=${DQT}128Kp${DQT}"
-          
+
           WDT="name=${DQT}width${DQT} value=${DQT}10KP${DQT}"
           WDTR="name=${DQT}width${DQT} value=${DQT}128Kp${DQT}"
-          
+
           MAP="name=${DQT}map${DQT} value=${DQT}512MiB${DQT}"
           MAPR="name=${DQT}map${DQT} value=${DQT}4GiB${DQT}"
-          
+
           MEM="name=${DQT}memory${DQT} value=${DQT}256MiB${DQT}"
           MEMR="name=${DQT}memory${DQT} value=${DQT}2GiB${DQT}"
-          
+
           sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
           sudo sed -i "s/$HGT/$HGTR/" /etc/ImageMagick-6/policy.xml
           sudo sed -i "s/$WDT/$WDTR/" /etc/ImageMagick-6/policy.xml
           sudo sed -i "s/$MAP/$MAPR/" /etc/ImageMagick-6/policy.xml
           sudo sed -i "s/$MEM/$MEMR/" /etc/ImageMagick-6/policy.xml
-          
+
       - name: Convert PDF to PNG
         run: convert -density 900 -background white -alpha off JonathanNicholas_Resume.pdf -resize 25% -quality 90 -colorspace RGB resume.png
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
-          add: 'JonathanNicholas_Resume.pdf resume.png'
+          add: "JonathanNicholas_Resume.pdf resume.png"
